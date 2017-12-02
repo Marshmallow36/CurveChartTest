@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/color4"
+    android:orientation="vertical">
+
+    <!-- 标题 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color14"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:baselineAligned="true"
+            android:gravity="center_vertical|start"
+            android:orientation="vertical"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="生物节律"
+            android:textColor="@color/color1"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <!-- 今日数据 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:baselineAligned="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:text="今日："
+            android:textColor="@color/color2"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/today_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:textColor="@color/color2"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/change_date"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:text="更换日期"
+            android:textSize="12sp" >
+        </Button>
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/today_date"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="13dp"-->
+            <!--android:textColor="@color/color2"-->
+            <!--android:textSize="18sp" />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="智力："
+            android:textColor="@color/color2"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/today_brains"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:textColor="@color/color13"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:text="情绪："
+            android:textColor="@color/color2"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/today_mood"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:textColor="@color/color14"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:text="体力："
+            android:textColor="@color/color2"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/today_physical"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/bt_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="返回"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <!-- 曲线图 -->
+    <LinearLayout
+        android:id="@+id/curveChart1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color1"
+        android:orientation="vertical"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:paddingTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:baselineAligned="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@color/color13" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="智力"
+                android:textColor="@color/color2"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/color14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="情绪"
+                android:textColor="@color/color2"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="体力"
+                android:textColor="@color/color2"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/customCurveChart1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:layout_marginBottom="30dp">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
